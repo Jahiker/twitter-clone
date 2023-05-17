@@ -14,7 +14,7 @@ export const SideNav = () => {
 
         <li>{user && <Link href={`/profile/${user.id}`}>Profile</Link>}</li>
 
-        {user !== null ? (
+        {user === null ? (
           <li>
             <button onClick={() => void signIn()}>Log in</button>
           </li>
